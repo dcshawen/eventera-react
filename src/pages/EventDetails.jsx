@@ -55,6 +55,9 @@ const EventDetails = () => {
             {event.Category && (
                 <p className="card-text"><small className="text-muted">Category: {event.Category.Title}</small></p>
             )}
+            <Link to={`/purchase/${event.AstronomicalEventId}`} className="btn btn-primary btn-lg mt-3">
+              Buy Tickets
+            </Link>
             <Link to="/" className="btn btn-outline-secondary btn-lg mt-3 ms-2">
               Back to Events
             </Link>
